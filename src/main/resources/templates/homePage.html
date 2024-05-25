@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div>
+		<p>
+			帳號: <span id="username" th:value="${session.username}"
+				th:text="${session.username}"></span>
+		</p>
+		<p>
+			密碼: <span id="password" th:value="${session.password}"
+				th:text="${session.password}"></span>
+		</p>
+		<p>
+			名字: <input id="fullName" th:value="${session.fullName}" type="text">
+		</p>
+			<input type="button" value="修改" onclick="edit()">
+			<input type="button" value="刪除帳號" onclick="remove()">
+	</div>
+	
+	<div>
+		<br>
+	</div>
+
+	<div>
+		<input type="button" value="訂單訂購" onclick="orderBuy()">
+		<input type="button" value="訂單查詢" onclick="orderSearchPage()">
+		<input type="button" value="訂單統計" onclick="orderStatistics()">
+		<input type="text" id="statisticsNumber" >
+	</div>
+	<div id="results">
+
+	</div>
+	<script src="/js/login.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+</body>
+</html>

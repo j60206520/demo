@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="login_page">
+		<h3>登入 Login</h3>
+		<form>
+			<input type="text" id="username" name="username" placeholder="帳號"
+				required>
+			<div class="tab"></div>
+			<input type="text" id="password" name="password" placeholder="密碼"
+				required>
+			<div class="tab"></div>
+			<input type="button" value="登入" onclick="login()"> <input
+				type="button" value="註冊帳號" onclick="registerPage()">
+		</form>
+	</div>
+
+	<script src="/js/login.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+</body>
+</html>

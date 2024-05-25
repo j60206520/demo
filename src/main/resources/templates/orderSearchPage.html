@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<div class="container">
+		<h2>會員訂單查詢</h2>
+		<p>帳號: <span id="username" th:text="${session.username}"></span></p>
+		<div>
+			<label for="orderId">訂單編號</label> 
+			<input type="text" id="orderId" placeholder="輸入訂單編號">
+		</div>
+		<div>
+			<label for="productName">產品名稱</label> 
+			<input type="text" id="productName" placeholder="輸入產品名稱">
+		</div>
+		<div>
+			<label for="purchaseDate">購買日期</label> 
+			<input type="date" id="purchaseDate">
+		</div>
+		<div>
+			<button onclick="searchOrders()">查詢</button>
+		</div>
+		<div id="results">
+
+		</div>
+	</div>
+	<script src="/js/order.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+</body>
+</html>
